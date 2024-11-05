@@ -18,20 +18,21 @@
       title: "Modern Kitchen Renovation",
       description: "Complete kitchen transformation featuring custom cabinets, marble countertops, and state-of-the-art appliances. Our team worked closely with the homeowners to create a stunning, functional space that exceeds expectations.",
       images: [
-        '/work1/i1.jpg',
-        '/work1/i2.jpg',
-        '/work1/i3.jpg',
-        '/work1/i4.jpg',
-        '/work1/i5.jpg',
-        '/work1/i6.jpg'
+        '/work1/1.jpg',
+        '/work1/2.jpg',
+        '/work1/3.jpg',
+        '/work1/4.jpg',
+        '/work1/5.jpg',
+        '/work1/6.jpg'
       ]
     },
 	  {
 		title: "Modern Exterior Renovation ",
 		description: "From 90s to future",
 		images: [
-        '/work2/i1.jpg',
-        '/work2/i2.jpg'
+        '/work2/1.jpg',
+        '/work2/2.jpg',
+        '/work2/3.jpg'
       ]
 	  }
 	];
