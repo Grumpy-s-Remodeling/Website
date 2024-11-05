@@ -2,9 +2,7 @@
 	import { onMount } from 'svelte';
 	
 	const images = [
-	  '/static/example.jpg',
-	  '/static/example2.jpg',
-	  '/static/example3.jpg'
+	  
 	];
 	
 	let currentImage = 0;
@@ -73,9 +71,45 @@
 	  const currentProject = projects[currentProjectIndex];
 	  currentSlide = (currentSlide - 1 + currentProject.images.length) % currentProject.images.length;
 	}
+
+
+
+// ---------------------
+	// Pardon Our Dust Banner
+	// ---------------------
+	let showBanner = true; // Controls banner visibility
+
+	// ---------------------
+	// End of Banner Section
+	// ---------------------
+
+
+
   </script>
   
   <main class="min-h-screen bg-gray-900 text-gray-100">
+
+
+<!-- ---------------------
+     Pardon Our Dust Banner
+     --------------------- -->
+     {#if showBanner}
+     <div class="fixed top-0 inset-x-0 bg-yellow-500 text-gray-900 py-2 text-center text-sm flex items-center justify-center z-50">
+       <span class="mr-4">🚧 Pardon our dust! This site is currently in development. Some features may not work as expected.</span>
+       <button 
+         on:click={() => showBanner = false}
+         class="text-gray-900 font-bold ml-2 hover:opacity-70 transition-opacity"
+       >
+         ×
+       </button>
+     </div>
+   {/if}
+   <!-- ---------------------
+        End of Banner Section
+        --------------------- -->
+
+
+
 	<!-- Hero Section -->
 	<section class="relative h-[90vh] overflow-hidden">
 	  <div class="absolute inset-0 transition-opacity duration-700">
@@ -151,8 +185,8 @@
 		<div class="text-center">
 		  <h2 class="text-4xl font-bold mb-8 text-white">Get In Touch</h2>
 		  <div class="space-y-4">
-			<p class="text-xl text-gray-300">Phone: (123) 456-7890</p>
-			<p class="text-xl text-gray-300">Email: info@yourcompany.com</p>
+			<p class="text-xl text-gray-300">Phone: (769) 650-0756</p>
+			<p class="text-xl text-gray-300">Email: grumpysremodelingllc@gmail.com</p>
 			<button 
 			  on:click={toggleSchedulePopup}
 			  class="mt-8 bg-white text-gray-900 px-8 py-4 rounded-full hover:bg-gray-200 transition-all duration-300"
@@ -172,7 +206,7 @@
 			<h3 class="text-xl font-bold mb-4 text-white">Contact Us</h3>
 			<div class="space-y-2">
 			  
-			  <p>Phone: Get info Error (500)</p>
+			  <p>Phone: (769) 650-0756 </p>
 			</div>
 		  </div>
 		  <div>
